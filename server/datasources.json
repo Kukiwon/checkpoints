@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "rds": {
+    "host": "nps-checkpoints.cwebo5lxuwex.eu-west-1.rds.amazonaws.com",
+    "port": 3306,
+    "database": "nps_checkpoints_dev",
+    "username": "nps",
+    "password": "Machagter007",
+    "name": "rds",
+    "connector": "mysql"
+  }
+}

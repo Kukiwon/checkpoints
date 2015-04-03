@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "rds"
+  },
+  "AccessToken": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "Developer": {
+    "dataSource": "rds",
+    "public": true
+  }
+}
