@@ -1,0 +1,29 @@
+{
+  "name": "Session",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "identifier": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sessionCheckPoints": {
+      "type": "hasMany",
+      "model": "SessionCheckPoint",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Project",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "hash": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "checkPoints": {
+      "type": "hasMany",
+      "model": "CheckPoint",
+      "foreignKey": ""
+    },
+    "sessions": {
+      "type": "hasMany",
+      "model": "Session",
+      "foreignKey": ""
+    },
+    "developer": {
+      "type": "belongsTo",
+      "model": "Developer",
+      "foreignKey": "developerId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "DENY",
+      "property": "findOne"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "findOne"
+    }
+  ],
+  "methods": []
+}

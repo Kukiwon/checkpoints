@@ -1,8 +1,9 @@
 module.exports = function(Developer) {
-	Developer.beforeRemote('create', function(context, user, next) {
-		var req = context.req;
-		req.body.created = Date.now();
-		req.body.emailVerified = false;
+	Developer.observe('before save', function init(ctx, next) {
+		if(typeof ctx.instance.created === 'undefined')
+			ctx.instance.created = Date.now();
+		if(typeof ctx.instance.emailVerified === 'undefined')
+			ctx.instance.emailVerified = false;
 		next();
 	});
 };

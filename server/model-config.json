@@ -7,9 +7,6 @@
       "./models"
     ]
   },
-  "User": {
-    "dataSource": "rds"
-  },
   "AccessToken": {
     "dataSource": "rds",
     "public": true
@@ -27,6 +24,22 @@
     "public": true
   },
   "Developer": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "Project": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "CheckPoint": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "Session": {
+    "dataSource": "rds",
+    "public": true
+  },
+  "SessionCheckPoint": {
     "dataSource": "rds",
     "public": true
   }

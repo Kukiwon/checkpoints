@@ -1,0 +1,25 @@
+{
+  "name": "SessionCheckPoint",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "created": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "checkPoint": {
+      "type": "belongsTo",
+      "model": "CheckPoint",
+      "foreignKey": ""
+    },
+    "session": {
+      "type": "belongsTo",
+      "model": "Session",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
