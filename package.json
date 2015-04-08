@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "pretest": "jshint ."
   },
   "dependencies": {
@@ -26,5 +27,17 @@
     "type": "",
     "url": ""
   },
-  "description": "checkpoints"
+  "description": "checkpoints",
+  "bundleDependencies": [
+    "biguint-format",
+    "compression",
+    "cors",
+    "errorhandler",
+    "loopback",
+    "loopback-boot",
+    "loopback-connector-mysql",
+    "loopback-datasource-juggler",
+    "loopback-explorer",
+    "serve-favicon"
+  ]
 }

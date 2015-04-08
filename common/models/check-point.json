@@ -16,6 +16,11 @@
       "type": "belongsTo",
       "model": "Project",
       "foreignKey": ""
+    },
+    "sessionCheckPoints": {
+      "type": "hasMany",
+      "model": "SessionCheckPoint",
+      "foreignKey": ""
     }
   },
   "acls": [],

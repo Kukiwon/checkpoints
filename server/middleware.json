@@ -25,6 +25,11 @@
   "final": {
     "loopback#urlNotFound": {}
   },
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
+  },
   "final:after": {
     "errorhandler": {}
   }
